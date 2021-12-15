@@ -1,0 +1,299 @@
+
+  * {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins, sans-serif;
+  
+  }
+ 
+  #mainheader  {
+    margin:auto;
+    position: relative;
+   
+  }
+    /*desktop:1200px;
+    laptop:992px;
+    tablet:768px;
+    mobile:480px;*/
+nav{
+    background-color: antiquewhite;
+    border-bottom:2px #40916c ;
+    z-index:1;
+  
+}
+
+      .logo {
+        padding:5px;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        cursor: pointer;
+
+      
+      }
+      
+      .nav-links {
+        display: flex;
+        float: right;
+        list-style: none;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: antiquewhite;
+        z-index: 1;
+        
+      
+      }
+      .nav-link {
+        color:#333;
+        text-decoration: none;
+        padding:10px 30px;
+        margin:20px;
+        font-size:17.5px; }
+
+        @media screen and (max-width:1000px) and (min-width:320px){
+          nav{
+            display:block;
+
+          }
+        }
+      
+      .nav-link:hover {
+          background-color:#656d4a;
+          color:#fefae0;
+          border-radius: 10px;
+         
+      }
+      button {
+        color:#fefae0;
+        text-decoration: none;
+        padding:10px 30px;
+        margin:20px;
+        font-size:17.5px;
+        background-color:#656d4a;
+        border-radius: 10px ; 
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      button:hover {
+        background-color:#fefae0;
+        color:#333;
+        border-radius: 10px;
+        cursor: pointer;
+        
+      }
+        .slideshow-container {
+          width:100%; height:1000px; overflow:hidden; position:relative; 
+        }
+        .slideshow-container img{
+           position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;
+          }
+        @keyframes fling-minislide {
+          25%{opacity:1;} 40%{opacity:0;
+          }
+        }
+        .slideshow-container img:nth-child(4){
+          animation-delay:0s;
+        }
+        .slideshow-container img:nth-child(3){
+          animation-delay:5s;
+        }
+        .slideshow-container img:nth-child(2){
+          animation-delay:10s;
+        }
+        .slideshow-container img:nth-child(1){
+          animation-delay:15s;
+        }
+
+        .slideshow-container {
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+        -webkit-background-size:cover;
+        background-size:cover;
+        background-position: center center;
+      }
+        @media screen and (max-width:1000px) and (min-width:320px){
+          .slideshow-container img {
+            height:150vh;
+        
+        }
+      }
+      .text {
+        position: fixed;
+        z-index:1;
+        text-align: center;  
+        background-color: #fff;
+        color:#333;
+        padding:10px;
+        opacity:0.8;
+        margin: 10% 20%;
+        border-radius: 15px;
+      }
+        .shop-title {
+          text-align:center;
+          padding:5px;
+          margin:10px;
+          font-size:30px;
+        }
+
+        .container  {
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding:20px;
+        margin:50px;
+        
+
+          
+        }
+        .container > div{
+          border: 4px #333 solid;
+          padding:5px;
+          margin:20px;
+          border-radius: 15px;
+          box-shadow: 10px 10px 5px grey;
+         
+          }
+
+        .items{
+          width:100%;
+
+        
+        }
+        @media screen and (max-width:900px) and (min-width:320px){
+          .container{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+          }
+        }
+        .container p{
+          margin:5px;
+          padding:5px; 
+        }
+ 
+      form {
+        position: absolute;
+        width:800px;
+        height:880px;
+        margin: 5% 40%;
+        font-size:20px;
+        color:#333;
+        background-color: aliceblue;
+        font-size:22px;
+        border: 5px solid #333;
+        border-radius: 15px;
+        padding: 15px;
+      }
+      @media screen and (max-width:900px) and (min-width:320px){
+          form{
+            width:450px;
+            text-align:center;
+            margin: 5% 15%;
+          }
+          
+        }
+        
+      .contact-wrapper {
+        background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("https://spy.com/wp-content/uploads/2021/04/vint.jpg");
+        height: 180vh;
+        position: relative;
+      }
+      .contact-page {
+        height:150vh;
+      }
+      input[type=text],input[type=number] select, textarea {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical;
+      
+      }
+      input[type=number] {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ccc;
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 6px; 
+        resize: vertical ;
+      }
+      
+      .contact-select {
+        color:#333;
+        background-color: transparent;
+        text-decoration: none;
+        padding:10px 30px;
+        font-size:20px;
+        border: 1px solid #333;
+        padding: 10px 30px;
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right:20px;
+      }
+      .contact-select:hover {
+        background:#ccd5ae ;
+        color:#333;
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      #mainfooter {
+        display: flex;
+        width:100%;
+        height:15vh;
+        align-items:center;
+        justify-content: space-around;
+        font-size:15px;
+        background-color: black;
+        color:#fff;
+       
+      }
+       
+      .fa {
+        font-size:30px;
+        width:50px;
+        text-align:center;
+        text-decoration:none;
+        padding: 15px;
+      
+      }
+      .fa:hover {
+        opacity: 0.7;
+    }
+        
+        .fa-facebook {
+        color:#FFF;
+        background: blue;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 40em;
+        }
+        
+        .fa-twitter {
+        color:#FFF;
+        background: lightskyblue;
+        border-radius: 40em;
+
+        } 
+        .fa-instagram {
+          background: #125688;
+          color: white;
+          border-radius: 40em;
+        }
+        .fa-google {
+          background: #dd4b39;
+          color: white;
+          border-radius: 40em;
+        }
