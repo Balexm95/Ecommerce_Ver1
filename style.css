@@ -133,7 +133,21 @@ nav{
           margin:10px;
           font-size:30px;
         }
-
+        .shop-select{
+        color:#fefae0;
+        text-decoration: none;
+        padding:10px 30px;
+        font-size:17.5px;
+        background-color:#414833;
+        border-radius: 10px ; 
+        cursor: pointer;
+        }
+        .shop-select:hover{
+          background-color:#fefae0;
+          color:#333;
+          border-radius: 15px;
+          cursor: pointer; 
+        }
         .container  {
         display: grid;  
         grid-template-columns: 1fr 1fr 1fr ;
@@ -286,8 +300,8 @@ nav{
 
         } 
         .fa-instagram {
-          background: #125688;
-          color: white;
+          background: white;
+          color: magenta;
           border-radius: 40em;
         }
         .fa-google {
